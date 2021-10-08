@@ -1,0 +1,31 @@
+.clientsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clientsContainer span {
+    flex-basis: 18%;
+    width: 18%;
+    margin: 0 5px 15px 5px;
+}
+
+.clientsContainer span img {
+    height: auto;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    filter: drop-shadow(4px 4px 5px gray) grayscale(1);
+}
+
+.clientsContainer img:hover {
+    filter: drop-shadow(4px 4px 5px rgb(192, 227, 229)) grayscale(0);
+}
+
+@media (max-width: 576px) { 
+    .clientsContainer span {
+        flex-basis: 30%;
+        width: 30%;    
+        margin: 0 3px 15px 3px;
+    }
+}

@@ -1,0 +1,16 @@
+.card {
+    background-color: #fff;
+    width: calc(100% - 320px);
+    display: block;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    margin: 0 0 20px 320px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 991px) { 
+    .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+}

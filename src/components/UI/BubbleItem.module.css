@@ -1,0 +1,35 @@
+.bubblesContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.bubblesContainer span {
+	padding: 3px 4px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	background-color: #c0e3e7;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	font-weight: 400;
+}
+.bubblesContainer span.basic {
+	background-color: #e1e1e1;
+    position: relative;
+}
+
+.bubblesContainer span.basic:hover::after {
+	display: block;
+}
+
+.bubblesContainer span.basic::after {
+	content: "Basic";
+	position: absolute;
+	width: auto;
+    padding:  3px 5px;
+    font-size: 0.8rem;
+    background-color: #e1e1e1;
+	display: none;
+    top: -25px;
+    right: 0;
+}

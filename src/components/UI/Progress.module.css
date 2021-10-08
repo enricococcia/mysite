@@ -1,0 +1,102 @@
+.progress {
+	margin-bottom: 30px;
+}
+
+.progress .title {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	display: block;
+	font-weight: 400;
+}
+
+.progress .progressBar {
+	white-space: nowrap;
+	display: flex;
+	width: 100%;
+}
+
+.progress .progressBar .bullet {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid #c0e3e7;
+	background-color: #fff;
+	margin-right: 5px;
+	-webkit-animation: FadeIn 250ms linear;
+	animation: FadeIn 250ms linear;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.progress .progressBar .bullet:nth-child(1) {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+.progress .progressBar .bullet:nth-child(2) {
+	-webkit-animation-delay: 0.05s;
+	animation-delay: 0.05s;
+}
+
+.progress .progressBar .bullet:nth-child(3) {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+
+.progress .progressBar .bullet:nth-child(4) {
+	-webkit-animation-delay: 0.145s;
+	animation-delay: 0.145s;
+}
+
+.progress .progressBar .bullet:nth-child(5) {
+	-webkit-animation-delay: 0.175s;
+	animation-delay: 0.175s;
+}
+
+.progress .progressBar .bullet:nth-child(6) {
+	-webkit-animation-delay: 0.215s;
+	animation-delay: 0.215s;
+}
+
+.progress .progressBar .bullet:nth-child(7) {
+	-webkit-animation-delay: 0.245s;
+	animation-delay: 0.245s;
+}
+
+.progress .progressBar .bullet:nth-child(8) {
+	-webkit-animation-delay: 0.275s;
+	animation-delay: 0.275s;
+}
+
+.progress .progressBar .bullet:nth-child(9) {
+	-webkit-animation-delay: 0.31s;
+	animation-delay: 0.31s;
+}
+
+.progress .progressBar .bullet:nth-child(10) {
+	-webkit-animation-delay: 0.34s;
+	animation-delay: 0.34s;
+}
+
+.progress .progressBar .bullet.fill {
+	background-color: #c0e3e7;
+}
+
+.progress .description {
+	font-size: 0.85rem;
+	line-height: 1.2rem;
+	display: block;
+}
+
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.1);
+		transform: scale(0.1);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}

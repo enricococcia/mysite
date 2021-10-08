@@ -1,0 +1,29 @@
+.infoBoxContainer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.infoBoxContainer .infoBox {
+	flex: 0;
+	flex-basis: 48%;
+}
+
+.infoBoxContainer .infoBox .title {
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #757575;
+	margin-top: 0;
+}
+
+@media (max-width: 991px) {
+	.infoBoxContainer {
+		flex-direction: column;
+	}
+
+	.infoBoxContainer .infoBox {
+		margin-bottom: 20px;
+        flex-basis: 100%;
+	}
+}

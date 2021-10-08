@@ -1,0 +1,124 @@
+.experience {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-bottom: 30px;
+}
+
+.experience .date {
+	background-color: #c0e3e7;
+	margin-left: 0;
+	margin-right: 22px;
+	padding: 0 6px;
+	font-size: 0.875em;
+	text-align: center;
+	flex: 0 0 200px;
+	flex-grow: 0;
+	margin: 0 30px;
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+}
+
+.experience .date p {
+	margin: 0;
+}
+
+.experience .date:after {
+	content: "";
+	top: 0;
+	left: 100%;
+	width: 0;
+	height: 0;
+	width: 0;
+	height: 0;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-left: 16px solid #c0e3e7;
+	position: absolute;
+}
+
+.experience .experienceInfo {
+	position: relative;
+	padding-left: 16px;
+	flex: 1;
+}
+
+.experience .experienceInfo::before {
+	content: "";
+	position: absolute;
+	top: 13px;
+	left: -1.5px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #333;
+	z-index: 2;
+}
+
+.experience .experienceInfo::after {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 0;
+	bottom: 0;
+	width: 1px;
+	opacity: 0.5;
+	background-color: #c0e3e7;
+	z-index: 1;
+}
+
+.experience .experienceInfo h3 {
+	margin-top: 0;
+}
+
+.experience .experienceInfo img {
+	max-height: 25px;
+	display: block;
+	margin-bottom: 15px;
+    width: auto;
+}
+
+.experience .experienceInfo .company {
+	font-size: 0.9rem;
+	color: #333;
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.experience .experienceInfo .description {
+	display: block;
+	margin: 15px 0;
+}
+
+@media (max-width: 576px) {
+	.experience {
+		flex-direction: column;
+	}
+
+	.experience .date {
+		flex: auto;
+	}
+
+	.experience .date::after {
+		transform: rotate(-180deg);
+		left: -16px;
+	}
+
+	.experience .experienceInfo::before {
+		top: -17px;
+	}
+
+	.experience .experienceInfo::after {
+		top: -16px;
+	}
+
+	.experience .experienceInfo h3 {
+		margin-top: 15px;
+	}
+}
