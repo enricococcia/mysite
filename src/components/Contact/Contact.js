@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import LangContext from "../../store/lang-context";
+import SettingsContext from "../../store/settings-context";
 import ContactForm from "./ContactForm";
 import Card from "../UI/Card";
 import Modal from "../UI/Modal";
@@ -8,7 +8,7 @@ import { privacyData, privacyDataIt } from "../../data/privacy-data";
 import { localeData, localeDataIt } from "../../data/locale-data";
 
 const Contact = () => {
-	const langContext = useContext(LangContext);
+	const settingsContext = useContext(SettingsContext);
 
 	const { isLoading, error, sendRequest: sendMessageRequest } = useHttp();
 
@@ -33,7 +33,7 @@ const Contact = () => {
 		<Card id="m7">
 			<h3 className="section-title">CONTACT ME</h3>
 			<p className="section-description">
-				{langContext.lang === "en"
+				{settingsContext.lang === "en"
 					? localeData.contactPresentation
 					: localeDataIt.contactPresentation}
 			</p>
@@ -48,7 +48,7 @@ const Contact = () => {
 			{isPrivacyModalOpened && (
 				<Modal onClose={() => toggleModalHandler(false)}>
 					<h3>Privacy Policy</h3>
-					{langContext.lang === "en" ? privacyData : privacyDataIt}
+					{settingsContext.lang === "en" ? privacyData : privacyDataIt}
 				</Modal>
 			)}
 		</Card>

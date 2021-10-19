@@ -13,7 +13,7 @@
 .infoBoxContainer .infoBox .title {
 	font-size: 1.4rem;
 	font-weight: 400;
-	color: #757575;
+	color: var(--color-foreground-secondary);
 	margin-top: 0;
 }
 

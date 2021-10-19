@@ -9,7 +9,6 @@ export const BackgroundShapes = (props) => {
                 role="presentation"
 			>
 				<polygon
-					fill={props.bgOne}
 					points="0,455,693,352,173,0,92,0,0,71"
 				></polygon>
 			</svg>
@@ -22,7 +21,6 @@ export const BackgroundShapes = (props) => {
 			>
 				<polygon
 					points="0,0,633,0,633,536"
-					fill={props.bgTwo}
 				></polygon>
 			</svg>
 		</>

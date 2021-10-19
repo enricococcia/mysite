@@ -19,8 +19,8 @@
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-	border: 1px solid #c0e3e7;
-	background-color: #fff;
+	border: 1px solid var(--color-primary);
+	background-color: var(--color-background);
 	margin-right: 5px;
 	-webkit-animation: FadeIn 250ms linear;
 	animation: FadeIn 250ms linear;
@@ -79,7 +79,7 @@
 }
 
 .progress .progressBar .bullet.fill {
-	background-color: #c0e3e7;
+	background-color: var(--color-primary)
 }
 
 .progress .description {

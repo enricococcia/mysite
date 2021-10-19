@@ -35,7 +35,7 @@
 		position: fixed;
 		top: 35px;
 		right: -150px;
-		background-color: white;
+		background-color: var(--color-bg-menu);
 	}
 
 	.menu .closeMobile {
@@ -43,12 +43,16 @@
 		cursor: pointer;
 		font-size: 1rem;
 		float: left;
-		background-color: #c0e3e7;
+		background-color: var(--color-primary);
 		padding: 4px;
 		position: relative;
 		top: -15px;
 		left: -15px;
 	}
+
+    .menu .closeMobile svg path {
+        stroke: var(--color-foreground);
+    }
 
 	.menu.open {
 		right: 0;
@@ -63,7 +67,7 @@
 .toggleMenu {
 	width: 60px;
 	height: 60px;
-	background-color: white;
+	background-color: var(--color-bg-button-menu);
 	border-radius: 50%;
 	text-align: center;
 	line-height: 60px;

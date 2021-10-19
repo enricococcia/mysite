@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import LangContext from "../../store/lang-context";
+import SettingsContext from "../../store/settings-context";
 import Card from "../UI/Card";
 import InfoBox from "../UI/InfoBox";
 import Progress from "../UI/Progress";
@@ -9,19 +9,19 @@ import { languagesData, languagesDataIt } from "../../data/languages-data";
 import { localeData, localeDataIt } from "../../data/locale-data";
 
 const About = () => {
-	const langContext = useContext(LangContext);
+	const settingsContext = useContext(SettingsContext);
 
 	const dataInfo = [
 		{
 			id: "i1",
 			title:
-				langContext.lang === "en"
+				settingsContext.lang === "en"
 					? "personal information"
 					: "informazioni personali",
 			content: (
 				<SimpleTable
 					data={
-						langContext.lang === "en"
+						settingsContext.lang === "en"
 							? personalData
 							: personalDataIt
 					}
@@ -30,11 +30,11 @@ const About = () => {
 		},
 		{
 			id: "i2",
-			title: langContext.lang === "en" ? "languages" : "lingue",
+			title: settingsContext.lang === "en" ? "languages" : "lingue",
 			content: (
 				<Progress
 					data={
-						langContext.lang === "en"
+						settingsContext.lang === "en"
 							? languagesData
 							: languagesDataIt
 					}
@@ -48,7 +48,7 @@ const About = () => {
 		<Card id="m2">
 			<h3 className="section-title">ABOUT ME</h3>
 			<p className="section-description">
-				{langContext.lang === "en"
+				{settingsContext.lang === "en"
 					? localeData.aboutPresentation
 					: localeDataIt.aboutPresentation}
 			</p>

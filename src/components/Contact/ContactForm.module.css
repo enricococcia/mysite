@@ -1,5 +1,5 @@
 .form {
-	border-bottom: 2px solid #c0e3e7;
+	border-bottom: 2px solid var(--color-primary);
 	width: 460px;
 	max-width: 100%;
 	padding: 20px;
@@ -42,26 +42,30 @@
 .invalid label,
 .invalid p,
 .error {
-	color: #ca3e51;
+	color: var(--color-error-foreground);
 }
 
 .invalid input,
 .invalid textarea {
-	border-color: #aa0b20;
+	border-color:  var(--color-error-border);
 	background-color: #ffeff1;
 }
 
 .privacyPolicy {
 	font-size: 0.9rem;
-	color: #333;
+	color: var(--color-foreground);
     display: inline-block;
     margin-bottom: 20px;
 }
 
+.privacyPolicy:hover, .privacyPolicy:focus {
+	color: var(--color-link-hover);
+}
+
 .loader {
 	margin: 0 auto;
-	border: 16px solid #f3f3f3;
-	border-top: 16px solid #c0e3e7;
+	border: 16px solid var(--color-border);
+	border-top: 16px solid var(--color-primary);
 	border-radius: 50%;
 	width: 120px;
 	height: 120px;

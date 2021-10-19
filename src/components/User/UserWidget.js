@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import LangContext from "../../store/lang-context";
+import { useContext, useEffect } from "react";
+import SettingsContext from "../../store/settings-context";
 import useScroll from "../../hooks/use-scroll";
 import Button from "../UI/Button";
 import classes from "./UserWidget.module.css";
@@ -14,10 +14,21 @@ const UserWidget = () => {
 		widgetClass = `${classes.widget} ${classes.sticky}`;
 	}
 
-	const langContext = useContext(LangContext);
+	const settingsContext = useContext(SettingsContext);
 	const changeLanguageHandler = (event) => {
-		langContext.selectLang(event.target.value);
+		settingsContext.selectLang(event.target.value);
 	};
+
+	const changeModeHandler = (event) => {
+		settingsContext.selectMode(event.target.value);
+	};
+
+	useEffect(() => {
+        document.body.className = "";
+        document.body.classList.add("pippo");
+		document.body.classList.add(settingsContext.mode);
+	}, [settingsContext.mode]);
+
 
 	return (
 		<div className={classes.widgetContainer}>
@@ -52,7 +63,7 @@ const UserWidget = () => {
 					>
 						<FaLinkedinIn />
 					</a>
-                    <a
+					<a
 						href="https://github.com/enricococcia/mysite"
 						rel="noreferrer"
 						target="_blank"
@@ -69,7 +80,7 @@ const UserWidget = () => {
 								)
 							}
 						>
-							{langContext.lang === "en"
+							{settingsContext.lang === "en"
 								? "Download Resume"
 								: "Download Curriculum"}
 						</Button>
@@ -77,12 +88,25 @@ const UserWidget = () => {
 					{
 						<select
 							id="select-language"
+                            className={classes.langSelect}
 							aria-label="Select language"
 							onChange={changeLanguageHandler}
-							defaultValue={langContext.lang}
+							defaultValue={settingsContext.lang}
 						>
 							<option value="en">English</option>
 							<option value="it">Italiano</option>
+						</select>
+					}
+					{
+						<select
+							id="select-mode"
+                            className={classes.modeSelect}
+							aria-label="Select mode"
+							onChange={changeModeHandler}
+							defaultValue={settingsContext.mode}
+						>
+							<option value="light">Light</option>
+							<option value="dark">Dark</option>
 						</select>
 					}
 				</div>

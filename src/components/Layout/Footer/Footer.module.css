@@ -12,7 +12,7 @@
 .scrollToTop {
 	width: 60px;
 	height: 60px;
-	background-color: white;
+	background-color: var(--color-bg-scrolltop);
 	border-radius: 50%;
 	text-align: center;
 	line-height: 60px;
@@ -52,4 +52,3 @@
 		display: none!important;
 	}
 }
-

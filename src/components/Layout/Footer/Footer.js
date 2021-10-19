@@ -26,7 +26,7 @@ const Footer = () => {
 			>
 				<RiArrowUpSLine />
 			</span>
-			<BackgroundShapes bgOne="#e1e1e1" bgTwo="#c0e3e7" />
+			<BackgroundShapes />
 		</>
 	);
 };

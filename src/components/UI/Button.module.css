@@ -1,9 +1,9 @@
 .button {
 	font: inherit;
 	cursor: pointer;
-	background-color: #c0e3e7;
-	border: 1px solid #c0e3e7;
-	color: #111;
+	background-color: var(--color-primary);
+	border: 1px solid var(--color-primary);
+	color: var(--color-foreground);
 	padding: 0.25rem 2rem;
 	border-radius: 2px;
 	font-weight: bold;
@@ -15,14 +15,14 @@
 .button:hover,
 .button:active,
 .button:focus {
-	background-color: #e1e1e1;
+	background-color: var(--color-button-hover);
 }
 
 .button:disabled,
 .button:disabled:hover,
 .button:disabled:active {
-	background-color: #e1e1e1;
-	color: #111;
-	border-color: #c0e3e7;
+	background-color: var(--color-grey-light-1);
+	color: var(--color-grey-darker);
+	border-color: var(--color-grey-darker);
 	cursor: not-allowed;
 }

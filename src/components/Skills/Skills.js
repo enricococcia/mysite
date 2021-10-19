@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import LangContext from "../../store/lang-context";
+import SettingsContext from "../../store/settings-context";
 import Card from "../UI/Card";
 import InfoBox from "../UI/InfoBox";
 import BubbleItem from "../UI/BubbleItem";
@@ -8,7 +8,7 @@ import { technologiesData } from "../../data/technologies-data";
 import { localeData, localeDataIt } from "../../data/locale-data";
 
 const Skills = () => {
-	const langContext = useContext(LangContext);
+	const settingsContext = useContext(SettingsContext);
 
 	const contentSkills = skillsData.map((item) => {
 		return <li key={item.id}>{item.title}</li>;
@@ -22,7 +22,7 @@ const Skills = () => {
 		},
 		{
 			id: "i4",
-			title: langContext.lang === "en" ? "technologies" : "tecnologie",
+			title: settingsContext.lang === "en" ? "technologies" : "tecnologie",
 			content: <BubbleItem data={technologiesData} />,
 		},
 	];
@@ -31,7 +31,7 @@ const Skills = () => {
 		<Card id="m5">
 			<h3 className="section-title">SKILLS</h3>
 			<p className="section-description">
-				{langContext.lang === "en"
+				{settingsContext.lang === "en"
 					? localeData.skillsPresentation
 					: localeDataIt.skillsPresentation}
 			</p>

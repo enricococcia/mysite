@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import LangContext from "../../store/lang-context";
+import SettingsContext from "../../store/settings-context";
 import classes from "./ContactForm.module.css";
 import Button from "../UI/Button";
 import useInput from "../../hooks/use-input";
 import { validateEmail } from "../../helper/helper";
 
 const ContactForm = (props) => {
-	const langContext = useContext(LangContext);
+	const settingsContext = useContext(SettingsContext);
 
 	const {
 		value: enteredName,
@@ -82,7 +82,7 @@ const ContactForm = (props) => {
 			</span>
 		</label>
 	);
-	if (langContext.lang === "it") {
+	if (settingsContext.lang === "it") {
 		privacyButton = (
 			<label className={classes.privacyPolicy} htmlFor="privacy">
 				Ho letto e accetto la{" "}
@@ -102,7 +102,7 @@ const ContactForm = (props) => {
 			<form className={classes.form} onSubmit={submitHandler}>
 				<div className={checkValidClass(nameInputHasError)}>
 					<label htmlFor="name">
-						{langContext.lang === "en" ? "Your Name" : "Nome"}*
+						{settingsContext.lang === "en" ? "Your Name" : "Nome"}*
 					</label>
 					<input
 						type="text"
@@ -113,7 +113,7 @@ const ContactForm = (props) => {
 					/>
 					{nameInputHasError && (
 						<p>
-							{langContext.lang === "en"
+							{settingsContext.lang === "en"
 								? "Name must be not empty."
 								: "Il campo nome è obbligatori.*"}
 						</p>
@@ -130,7 +130,7 @@ const ContactForm = (props) => {
 					/>
 					{emailInputHasError && (
 						<p>
-							{langContext.lang === "en"
+							{settingsContext.lang === "en"
 								? "Please insert a valid email."
 								: "Per favore inserisci una mail valida."}
 						</p>
@@ -138,7 +138,7 @@ const ContactForm = (props) => {
 				</div>
 				<div className={checkValidClass(messageInputHasError)}>
 					<label htmlFor="message">
-						{langContext.lang === "en" ? "Message" : "Messaggio"}*
+						{settingsContext.lang === "en" ? "Message" : "Messaggio"}*
 					</label>
 					<textarea
 						id="message"
@@ -148,7 +148,7 @@ const ContactForm = (props) => {
 					/>
 					{messageInputHasError && (
 						<p>
-							{langContext.lang === "en"
+							{settingsContext.lang === "en"
 								? "Message field must be not empty."
 								: "Il campo messaggio è obbligatorio."}
 						</p>
@@ -167,7 +167,7 @@ const ContactForm = (props) => {
 							className={classes.submit}
 							type="submit"
 						>
-							{langContext.lang === "en" ? "Send" : "Invia"}
+							{settingsContext.lang === "en" ? "Send" : "Invia"}
 						</Button>
 					</div>
 				)}

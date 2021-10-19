@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import LangContext from "../../store/lang-context";
+import SettingsContext from "../../store/settings-context";
 import Card from "../UI/Card";
 import classes from "./Clients.module.css";
 import { clientsData } from "../../data/clients-data";
 import { localeData, localeDataIt } from "../../data/locale-data";
 
 const Clients = () => {
-	const langContext = useContext(LangContext);
+	const settingsContext = useContext(SettingsContext);
 
 	let contentClients = <p>No data found</p>;
 
@@ -29,7 +29,7 @@ const Clients = () => {
 		<Card id="m6">
 			<h3 className="section-title">CLIENTS</h3>
 			<p className="section-description">
-				{langContext.lang === "en"
+				{settingsContext.lang === "en"
 					? localeData.clientsPresentation
 					: localeDataIt.clientsPresentation}
 			</p>

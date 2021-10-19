@@ -1,5 +1,5 @@
 import React from "react";
-import LangProvider from "./store/lang-provider";
+import SettingsProvider from "./store/settings-provider";
 import Wrapper from "./components/Layout/Wrapper/Wrapper";
 import Header from "./components/Layout/Header/Header";
 import UserWidget from "./components/User/UserWidget";
@@ -12,8 +12,9 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Layout/Footer/Footer";
 
 const App = () => {
+	
 	return (
-		<LangProvider>
+		<SettingsProvider>
 			<div className="container" id="m1">
 				<Header />
 				<Wrapper>
@@ -27,7 +28,7 @@ const App = () => {
 				</Wrapper>
 				<Footer />
 			</div>
-		</LangProvider>
+		</SettingsProvider>
 	);
 };
 
