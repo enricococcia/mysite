@@ -53,6 +53,9 @@ const Menu = () => {
 								onClick={() =>
 									executeScroll(item.id, toggleMenuHandler)
 								}
+                                onKeyPress={() =>
+									executeScroll(item.id, toggleMenuHandler)
+								}
 								role="link"
 								tabIndex="0"
 							>

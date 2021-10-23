@@ -20,6 +20,7 @@ const Footer = () => {
 			</footer>
 			<span
 				onClick={() => executeScroll("m1")}
+                onKeyPress={() => executeScroll("m1")}
 				role="link"
 				tabIndex="0"
                 className={scrollToTopClass}

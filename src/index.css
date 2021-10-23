@@ -32,8 +32,8 @@ body {
 
 body.dark {
     --color-background: #121212;
-	--color-foreground: #d6d6d6;
-	--color-foreground-secondary: #ccc;
+	--color-foreground: #fff;
+	--color-foreground-secondary: #ebebeb;
     --color-grey-darker: #1e1e1e;
     --color-grey-medium: #2d2d2d;
     --color-grey-light-0: #363636;

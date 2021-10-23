@@ -24,11 +24,10 @@ const UserWidget = () => {
 	};
 
 	useEffect(() => {
-        document.body.className = "";
-        document.body.classList.add("pippo");
+		document.body.className = "";
+		document.body.classList.add("pippo");
 		document.body.classList.add(settingsContext.mode);
 	}, [settingsContext.mode]);
-
 
 	return (
 		<div className={classes.widgetContainer}>
@@ -47,6 +46,30 @@ const UserWidget = () => {
 					</h2>
 				</div>
 				<div className={classes.widgetActions}>
+					{
+						<select
+							id="select-mode"
+							className={classes.modeSelect}
+							aria-label="Select mode"
+							onChange={changeModeHandler}
+							defaultValue={settingsContext.mode}
+						>
+							<option value="light">Light</option>
+							<option value="dark">Dark</option>
+						</select>
+					}
+					{
+						<select
+							id="select-language"
+							className={classes.langSelect}
+							aria-label="Select language"
+							onChange={changeLanguageHandler}
+							defaultValue={settingsContext.lang}
+						>
+							<option value="en">English</option>
+							<option value="it">Italiano</option>
+						</select>
+					}
 					<a
 						href="https://github.com/enricococcia"
 						rel="noreferrer"
@@ -85,30 +108,6 @@ const UserWidget = () => {
 								: "Download Curriculum"}
 						</Button>
 					</div>
-					{
-						<select
-							id="select-language"
-                            className={classes.langSelect}
-							aria-label="Select language"
-							onChange={changeLanguageHandler}
-							defaultValue={settingsContext.lang}
-						>
-							<option value="en">English</option>
-							<option value="it">Italiano</option>
-						</select>
-					}
-					{
-						<select
-							id="select-mode"
-                            className={classes.modeSelect}
-							aria-label="Select mode"
-							onChange={changeModeHandler}
-							defaultValue={settingsContext.mode}
-						>
-							<option value="light">Light</option>
-							<option value="dark">Dark</option>
-						</select>
-					}
 				</div>
 			</div>
 		</div>
