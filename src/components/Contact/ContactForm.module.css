@@ -51,6 +51,10 @@
 	background-color: #ffeff1;
 }
 
+.form input[type='checkbox'] {
+    margin-right: 10px;
+}
+
 .privacyPolicy {
 	font-size: 0.9rem;
 	color: var(--color-foreground);
@@ -58,7 +62,7 @@
     margin-bottom: 20px;
 }
 
-.privacyPolicy:hover, .privacyPolicy:focus {
+.privacyPolicy span:hover, .privacyPolicy span:focus {
 	color: var(--color-link-hover);
 }
 
@@ -79,6 +83,20 @@
 	100% {
 		transform: rotate(360deg);
 	}
+}
+
+@media (max-width: 991px) {
+    .form input[type='checkbox'] {
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    .privacyPolicy {
+        display: inherit!important;
+    }
 }
 
 @media print {

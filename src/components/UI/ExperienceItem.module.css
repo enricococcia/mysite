@@ -122,3 +122,9 @@
 		margin-top: 15px;
 	}
 }
+
+@media print {
+    .experience .experienceInfo img {
+        filter: grayscale(100%);
+    }
+}

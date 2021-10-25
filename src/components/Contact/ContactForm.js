@@ -145,6 +145,7 @@ const ContactForm = (props) => {
 						value={enteredMessage}
 						onChange={messageChangeHandler}
 						onBlur={messageBlurHandler}
+                        rows={"5"}
 					/>
 					{messageInputHasError && (
 						<p>

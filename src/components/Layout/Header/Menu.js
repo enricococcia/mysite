@@ -36,35 +36,44 @@ const Menu = () => {
 					className={classes.backdropMobile}
 				></Backdrop>
 			)}
-
-			<ul className={menuClasses}>
-				<span
-					className={classes.closeMobile}
-					role="button"
-					tabIndex="0"
-					onClick={toggleMenuHandler}
-				>
-					<GrClose className={classes.iconCloseMenu} />
-				</span>
-				{menuData.map((item) => {
-					return (
-						<li key={item.id}>
-							<span
-								onClick={() =>
-									executeScroll(item.id, toggleMenuHandler)
-								}
-                                onKeyPress={() =>
-									executeScroll(item.id, toggleMenuHandler)
-								}
-								role="link"
-								tabIndex="0"
-							>
-								{item.title}
-							</span>
-						</li>
-					);
-				})}
-			</ul>
+			<nav>
+				<ul className={menuClasses}>
+					<li className={classes.closeMobile}>
+						<span
+							role="button"
+							tabIndex="0"
+                            aria-label="Close Menu mobile"
+							onClick={toggleMenuHandler}
+						>
+							<GrClose className={classes.iconCloseMenu} />
+						</span>
+					</li>
+					{menuData.map((item) => {
+						return (
+							<li key={item.id}>
+								<span
+									onClick={() =>
+										executeScroll(
+											item.id,
+											toggleMenuHandler
+										)
+									}
+									onKeyPress={() =>
+										executeScroll(
+											item.id,
+											toggleMenuHandler
+										)
+									}
+									role="link"
+									tabIndex="0"
+								>
+									{item.title}
+								</span>
+							</li>
+						);
+					})}
+				</ul>
+			</nav>
 		</>
 	);
 };

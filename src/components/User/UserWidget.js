@@ -33,12 +33,13 @@ const UserWidget = () => {
 		<div className={classes.widgetContainer}>
 			<div className={widgetClass}>
 				<div className={classes.widgetInfo}>
+
 					<img
 						src={profileImg}
 						className={classes.avatar}
 						alt="Enrico Coccia"
-						width="242"
-						height="242"
+						width="390"
+						height="390"
 					/>
 					<h4 className={classes.name}>Enrico Coccia</h4>
 					<h2 className={classes.businessName}>
@@ -46,30 +47,32 @@ const UserWidget = () => {
 					</h2>
 				</div>
 				<div className={classes.widgetActions}>
-					{
-						<select
-							id="select-mode"
-							className={classes.modeSelect}
-							aria-label="Select mode"
-							onChange={changeModeHandler}
-							defaultValue={settingsContext.mode}
-						>
-							<option value="light">Light</option>
-							<option value="dark">Dark</option>
-						</select>
-					}
-					{
-						<select
-							id="select-language"
-							className={classes.langSelect}
-							aria-label="Select language"
-							onChange={changeLanguageHandler}
-							defaultValue={settingsContext.lang}
-						>
-							<option value="en">English</option>
-							<option value="it">Italiano</option>
-						</select>
-					}
+                    <div className={classes.widgetSelect}>
+                        {
+                            <select
+                                id="select-mode"
+                                className={classes.modeSelect}
+                                aria-label="Select mode"
+                                onChange={changeModeHandler}
+                                defaultValue={settingsContext.mode}
+                            >
+                                <option value="light">Light</option>
+                                <option value="dark">Dark</option>
+                            </select>
+                        }
+                        {
+                            <select
+                                id="select-language"
+                                className={classes.langSelect}
+                                aria-label="Select language"
+                                onChange={changeLanguageHandler}
+                                defaultValue={settingsContext.lang}
+                            >
+                                <option value="en">English</option>
+                                <option value="it">Italiano</option>
+                            </select>
+                        }
+                    </div>
 					<a
 						href="https://github.com/enricococcia"
 						rel="noreferrer"

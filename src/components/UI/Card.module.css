@@ -1,16 +1,46 @@
 .card {
-    background-color: var(--color-bg-card);
-    width: calc(100% - 320px);
-    display: block;
-    padding: 20px;
-    border: 1px solid var(--color-base-border);
-    margin: 0 0 20px 320px;
-    box-sizing: border-box;
+	background-color: var(--color-bg-card);
+	width: calc(100% - 320px);
+	display: block;
+	padding: 20px;
+	border: 1px solid var(--color-base-border);
+	margin: 0 0 20px 320px;
+	box-sizing: border-box;
+	position: relative;
 }
 
-@media (max-width: 991px) { 
-    .card {
-        width: 100%;
-        margin: 20px 0;
-    }
+.scrollToTopCard {
+	float: right;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+	color: var(--color-foreground);
+	display: block;
+	cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+}
+
+.scrollToTopCard svg {
+    width: 26px;
+    height: 26px;
+}
+
+@media (max-width: 991px) {
+	.card {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.scrollToTopCard {
+		display: none;
+	}
+}
+
+@media print {
+    .scrollToTopCard {
+		display: none;
+	}
 }
