@@ -6,7 +6,7 @@ export const executeScroll = (el, callback) => {
 			block: "start",
 			inline: "nearest",
 		});
-
+        console.log(element);
         element.focus({preventScroll: true});
 		if (callback) {
 			callback();

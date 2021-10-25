@@ -15,7 +15,7 @@ const App = () => {
 	
 	return (
 		<SettingsProvider>
-			<div className="container" id="m1">
+			<div className="container" id="m1" tabIndex="-1">
 				<Header />
 				<Wrapper>
 					<UserWidget />
