@@ -1,3 +1,4 @@
+import nextId from "react-id-generator";
 import logoUdemy from "../assets/images/logo-udemy.webp";
 import logoUdacity from "../assets/images/logo-udacity.webp";
 import logoCefi from "../assets/images/logo-cefi.webp";
@@ -6,7 +7,7 @@ import logoLabForWeb from "../assets/images/logo-labforweb.webp";
 //English
 export const educationData = [
     {
-		id: "e0",
+		id: nextId("e"),
 		title: "Javascript ES6",
 		dateStart: (
 			<span>
@@ -39,7 +40,7 @@ export const educationData = [
 		skills: [],
 	},
 	{
-		id: "e1",
+		id: nextId("e"),
 		title: "React Native",
 		dateStart: (
 			<span>
@@ -74,7 +75,7 @@ export const educationData = [
 		skills: [],
 	},
 	{
-		id: "e2",
+		id: nextId("e"),
 		title: "React",
 		dateStart: (
 			<span>
@@ -122,7 +123,7 @@ export const educationData = [
 		skills: [],
 	},
 	{
-		id: "e3",
+		id: nextId("e"),
 		title: "Web Accessibility by Google",
 		dateStart: (
 			<span>
@@ -158,7 +159,7 @@ export const educationData = [
 		skills: [],
 	},
 	{
-		id: "e4",
+		id: nextId("e"),
 		title: "Javascript & Jquery",
 		dateStart: (
 			<span>
@@ -197,7 +198,7 @@ export const educationData = [
 		skills: [],
 	},
 	{
-		id: "e5",
+		id: nextId("e"),
 		title: "PHP & Mysql",
 		dateStart: (
 			<span>
@@ -254,7 +255,7 @@ export const educationData = [
 		skills: [],
 	},
 	{
-		id: "e6",
+		id: nextId("e"),
 		title: "Web Design & Web Master Base",
 		dateStart: (
 			<span>
@@ -304,7 +305,7 @@ export const educationData = [
 //Italian
 export const educationDataIt = [
     {
-		id: "e0",
+		id: nextId("e"),
 		title: "Javascript ES6",
 		dateStart: (
 			<span>
@@ -337,7 +338,7 @@ export const educationDataIt = [
 		skills: [],
 	},
 	{
-		id: "e1",
+		id: nextId("e"),
 		title: "React Native",
 		dateStart: (
 			<span>
@@ -372,7 +373,7 @@ export const educationDataIt = [
 		skills: [],
 	},
 	{
-		id: "e2",
+		id: nextId("e"),
 		title: "React",
 		dateStart: (
 			<span>
@@ -421,7 +422,7 @@ export const educationDataIt = [
 		skills: [],
 	},
 	{
-		id: "e3",
+		id: nextId("e"),
 		title: "Web Accessibility by Google",
 		dateStart: (
 			<span>
@@ -457,7 +458,7 @@ export const educationDataIt = [
 		skills: [],
 	},
 	{
-		id: "e4",
+		id: nextId("e"),
 		title: "Javascript & Jquery",
 		dateStart: (
 			<span>
@@ -497,7 +498,7 @@ export const educationDataIt = [
 		skills: [],
 	},
 	{
-		id: "e5",
+		id: nextId("e"),
 		title: "PHP & Mysql",
 		dateStart: (
 			<span>
@@ -561,7 +562,7 @@ export const educationDataIt = [
 		skills: [],
 	},
 	{
-		id: "e6",
+		id: nextId("e"),
 		title: "Web Design & Web Master Base",
 		dateStart: (
 			<span>

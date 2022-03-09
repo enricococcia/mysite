@@ -1,3 +1,4 @@
+import nextId from "react-id-generator";
 import logoIccrea from "../assets/images/logo-iccrea.webp";
 import logoColes from "../assets/images/logo-coles.webp";
 import logoBe from "../assets/images/logo-be.webp";
@@ -8,7 +9,7 @@ import logoEsso from "../assets/images/logo-esso.webp";
 //English
 export const experiencesData = [
     {
-		id: "e0",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -48,7 +49,7 @@ export const experiencesData = [
 		],
 	},
 	{
-		id: "e1",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -93,7 +94,7 @@ export const experiencesData = [
 		],
 	},
 	{
-		id: "e2",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -131,7 +132,7 @@ export const experiencesData = [
 		],
 	},
 	{
-		id: "e3",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -187,7 +188,7 @@ export const experiencesData = [
 		],
 	},
 	{
-		id: "e4",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -296,7 +297,7 @@ export const experiencesData = [
 		],
 	},
 	{
-		id: "e6",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -337,7 +338,7 @@ export const experiencesData = [
 		],
 	},
 	{
-		id: "e7",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -379,7 +380,7 @@ export const experiencesData = [
 		],
 	},
 	{
-		id: "e8",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -416,7 +417,7 @@ export const experiencesData = [
 //Italian
 export const experiencesDataIt = [
     {
-		id: "e0",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -457,7 +458,7 @@ export const experiencesDataIt = [
 		],
 	},
 	{
-		id: "e1",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -503,7 +504,7 @@ export const experiencesDataIt = [
 		],
 	},
 	{
-		id: "e2",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -541,7 +542,7 @@ export const experiencesDataIt = [
 		],
 	},
 	{
-		id: "e3",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -599,7 +600,7 @@ export const experiencesDataIt = [
 		],
 	},
 	{
-		id: "e4",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -661,7 +662,7 @@ export const experiencesDataIt = [
 		],
 	},
 	{
-		id: "e5",
+		id: nextId("ex"),
 		title: "Front End Developer & Co-Founder",
 		dateStart: (
 			<span>
@@ -711,7 +712,7 @@ export const experiencesDataIt = [
 		],
 	},
 	{
-		id: "e6",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -753,7 +754,7 @@ export const experiencesDataIt = [
 		],
 	},
 	{
-		id: "e7",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>
@@ -796,7 +797,7 @@ export const experiencesDataIt = [
 		],
 	},
 	{
-		id: "e8",
+		id: nextId("ex"),
 		title: "Front End Developer",
 		dateStart: (
 			<span>

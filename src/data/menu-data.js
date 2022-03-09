@@ -1,30 +1,31 @@
+import nextId from "react-id-generator";
 export const menuData = [
 	{
-		id: "m1",
+		id: nextId("m"),
 		title: "Home",
 	},
     {
-		id: "m2",
+		id: nextId("m"),
 		title: "About",
 	},
     {
-		id: "m3",
+		id: nextId("m"),
 		title: "Experiences",
 	},
     {
-		id: "m4",
+		id: nextId("m"),
 		title: "Education",
 	},
     {
-		id: "m5",
+		id: nextId("m"),
 		title: "Skills",
 	},
     {
-		id: "m6",
+		id: nextId("m"),
 		title: "Clients",
 	},
     {
-		id: "m7",
+		id: nextId("m"),
 		title: "Contact",
 	},
 ];

@@ -1,3 +1,4 @@
+import nextId from "react-id-generator";
 import ares118Image from "../assets/images/clients/ares118.webp";
 import bulgariImage from "../assets/images/clients/bulgari.webp";
 import cadburyImage from "../assets/images/clients/cadbury.webp";
@@ -14,18 +15,18 @@ import mellinImage from "../assets/images/clients/mellin.webp";
 import nutrishoppingImage from "../assets/images/clients/nutrishopping.webp";
 
 export const clientsData = [
-	{ id: "c1", title: "Bulgari Hotels", image: bulgariImage },
-	{ id: "c2", title: "Chicco", image: chiccoImage },
-    { id: "c3", title: "Coca Cola", image: cocaColaImage },
-    { id: "c4", title: "Pay Pal", image: paypalImage },
-    { id: "c5", title: "Mercedes", image: mercedesImage },
-    { id: "c6", title: "Colgate", image: colgateImage },
-    { id: "c7", title: "Cadbury", image: cadburyImage },
-    { id: "c8", title: "Pompea", image: pompeaImage },
-    { id: "c9", title: "Rovagnati", image: rovagnatiImage },
-    { id: "c10", title: "Lines", image: linesImage },
-    { id: "c11", title: "Exxon Mobil", image: exxonImage },
-    { id: "c12", title: "Ares 118", image: ares118Image },
-    { id: "c13", title: "Mellin", image: mellinImage },
-    { id: "c14", title: "Nutrishopping", image: nutrishoppingImage },
+	{ id: nextId("c"), title: "Bulgari Hotels", image: bulgariImage },
+	{ id: nextId("c"), title: "Chicco", image: chiccoImage },
+    { id: nextId("c"), title: "Coca Cola", image: cocaColaImage },
+    { id: nextId("c"), title: "Pay Pal", image: paypalImage },
+    { id: nextId("c"), title: "Mercedes", image: mercedesImage },
+    { id: nextId("c"), title: "Colgate", image: colgateImage },
+    { id: nextId("c"), title: "Cadbury", image: cadburyImage },
+    { id: nextId("c"), title: "Pompea", image: pompeaImage },
+    { id: nextId("c"), title: "Rovagnati", image: rovagnatiImage },
+    { id: nextId("c"), title: "Lines", image: linesImage },
+    { id: nextId("c"), title: "Exxon Mobil", image: exxonImage },
+    { id: nextId("c"), title: "Ares 118", image: ares118Image },
+    { id: nextId("c"), title: "Mellin", image: mellinImage },
+    { id: nextId("c"), title: "Nutrishopping", image: nutrishoppingImage },
 ];
