@@ -5,6 +5,39 @@ import logoLabForWeb from "../assets/images/logo-labforweb.webp";
 
 //English
 export const educationData = [
+    {
+		id: "e0",
+		title: "Javascript ES6",
+		dateStart: (
+			<span>
+				Oct <strong>2021</strong>
+			</span>
+		),
+		dateFinish: (
+			<span>
+				Nov <strong>2021</strong>
+			</span>
+		),
+		company: "Udemy",
+		place: "Online",
+		url: "https://www.udemy.com/course/es6-bootcamp-next-generation-javascript",
+		logo: <img src={logoUdemy} alt="Udemy" width="300" height="112" />,
+		description: (
+			<span>
+				Accelereted ES6 Javascript Training.
+				<ul className="standard-list small">
+					<li>Syntax changes and Additions</li>
+					<li>Modules and Classes</li>
+					<li>Symbols</li>
+					<li>Iterators and Generators</li>
+					<li>Promises</li>
+					<li>Maps and Sets</li>
+					<li>and more...</li>
+				</ul>
+			</span>
+		),
+		skills: [],
+	},
 	{
 		id: "e1",
 		title: "React Native",
@@ -270,6 +303,39 @@ export const educationData = [
 
 //Italian
 export const educationDataIt = [
+    {
+		id: "e0",
+		title: "Javascript ES6",
+		dateStart: (
+			<span>
+				Ott <strong>2021</strong>
+			</span>
+		),
+		dateFinish: (
+			<span>
+				Nov <strong>2021</strong>
+			</span>
+		),
+		company: "Udemy",
+		place: "Online",
+		url: "https://www.udemy.com/course/es6-bootcamp-next-generation-javascript",
+		logo: <img src={logoUdemy} alt="Udemy" width="300" height="112" />,
+		description: (
+			<span>
+				Accelereted ES6 Javascript Training.
+				<ul className="standard-list small">
+					<li>Syntax changes and Additions</li>
+					<li>Modules and Classes</li>
+					<li>Symbols</li>
+					<li>Iterators and Generators</li>
+					<li>Promises</li>
+					<li>Maps and Sets</li>
+					<li>e tanto altro...</li>
+				</ul>
+			</span>
+		),
+		skills: [],
+	},
 	{
 		id: "e1",
 		title: "React Native",

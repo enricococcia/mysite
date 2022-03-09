@@ -1,11 +1,52 @@
 import logoIccrea from "../assets/images/logo-iccrea.webp";
 import logoColes from "../assets/images/logo-coles.webp";
+import logoBe from "../assets/images/logo-be.webp";
 import logoB2X from "../assets/images/logo-b2x.webp";
 import logoCercoAsilo from "../assets/images/logo-cercoasilo.webp";
 import logoEsso from "../assets/images/logo-esso.webp";
 
 //English
 export const experiencesData = [
+    {
+		id: "e0",
+		title: "Front End Developer",
+		dateStart: (
+			<span>
+				Mar <strong>2022</strong>
+			</span>
+		),
+		dateFinish: (
+			<span>
+				currently
+			</span>
+		),
+		company: "Be Shaping the Future",
+		place: "Rome",
+		url: "",
+		logo: (
+			<img src={logoBe} alt="Be | Shaping the Future" width="180" height="63" />
+		),
+		description: (
+			<span>
+				Front End Developer at "Be DigiTech Solutions SPA".
+				<br />
+				Collaboration to a professionals and highly qualified teams as
+				Front End Developer for designing and developing new features
+				and components for the different websites of the clients company.
+			</span>
+		),
+		skills: [
+			{ id: 1, title: "React/Redux", level: "advanced" },
+			{ id: 2, title: "Javascript", level: "advanced" },
+			{ id: 3, title: "Typescript", level: "advanced" },
+			{ id: 4, title: "JSON", level: "advanced" },
+			{ id: 5, title: "Html5", level: "advanced" },
+			{ id: 6, title: "WCAG", level: "advanced" },
+			{ id: 7, title: "Sass", level: "advanced" },
+			{ id: 8, title: "CSS3", level: "advanced" },
+			{ id: 9, title: "Git", level: "advanced" },
+		],
+	},
 	{
 		id: "e1",
 		title: "Front End Developer",
@@ -374,6 +415,47 @@ export const experiencesData = [
 
 //Italian
 export const experiencesDataIt = [
+    {
+		id: "e0",
+		title: "Front End Developer",
+		dateStart: (
+			<span>
+				Mar <strong>2022</strong>
+			</span>
+		),
+		dateFinish: (
+			<span>
+				ora
+			</span>
+		),
+		company: "Be Shaping the Future",
+		place: "Rome",
+		url: "",
+		logo: (
+			<img src={logoBe} alt="Be | Shaping the Future" width="180" height="63" />
+		),
+		description: (
+			<span>
+				Front End Developer presso "Be DigiTech Solutions SPA".
+				<br />
+                In un team professionale e altamente qualificato mi sono
+				occupato come Front End Developer della creazione e della
+				progettazione di nuove features dei diversi siti web gestiti dai clienti della società Be.
+				gruppo bancario.
+			</span>
+		),
+		skills: [
+			{ id: 1, title: "React/Redux", level: "advanced" },
+			{ id: 2, title: "Javascript", level: "advanced" },
+			{ id: 3, title: "Typescript", level: "advanced" },
+			{ id: 4, title: "JSON", level: "advanced" },
+			{ id: 5, title: "Html5", level: "advanced" },
+			{ id: 6, title: "WCAG", level: "advanced" },
+			{ id: 7, title: "Sass", level: "advanced" },
+			{ id: 8, title: "CSS3", level: "advanced" },
+			{ id: 9, title: "Git", level: "advanced" },
+		],
+	},
 	{
 		id: "e1",
 		title: "Front End Developer",
